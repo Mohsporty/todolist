@@ -55,15 +55,41 @@ class TasksScreen extends StatelessWidget {
               child: Container(
                 height: 300,
                 decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(20),
-                    )),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(20),
+                  ),
+                ),
+                // this code for tyape any thing in the list to whit page
+                child: TasksList(),
               ),
             )
           ],
         ),
       ),
+    );
+  }
+}
+
+// this is for build font and task in my app
+class TasksList extends StatelessWidget {
+  const TasksList({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        ListTile(
+          title: Text('Go To Shop'),
+          trailing: Checkbox(value: false, onChanged: null),
+        ),
+        ListTile(
+          title: Text('Go To Shop'),
+          trailing: Checkbox(value: false, onChanged: null),
+        ),
+      ],
     );
   }
 }
