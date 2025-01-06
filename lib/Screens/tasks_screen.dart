@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todolist/widgets/task_list_main.dart';
 
 class TasksScreen extends StatelessWidget {
   const TasksScreen({super.key});
@@ -67,29 +68,6 @@ class TasksScreen extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-// this is for build font and task in my app
-class TasksList extends StatelessWidget {
-  const TasksList({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView(
-      children: [
-        ListTile(
-          title: Text('Go To Shop'),
-          trailing: Checkbox(value: false, onChanged: null),
-        ),
-        ListTile(
-          title: Text('Go To Shop'),
-          trailing: Checkbox(value: false, onChanged: null),
-        ),
-      ],
     );
   }
 }
