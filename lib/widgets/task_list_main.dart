@@ -12,14 +12,8 @@ class TasksList extends StatelessWidget {
     return ListView(
       children: [
         tasks_list(),
-        ListTile(
-          title: Text('Go To Shop'),
-          trailing: Checkbox(value: false, onChanged: null),
-        ),
-        ListTile(
-          title: Text('Go To Shop'),
-          trailing: Checkbox(value: false, onChanged: null),
-        ),
+        tasks_list(),
+        tasks_list(),
       ],
     );
   }
